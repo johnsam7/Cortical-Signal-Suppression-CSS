@@ -7,7 +7,7 @@ Created on Thu Jul 13 13:40:33 2017
 
 import numpy as np
 
-def SECS(magdata,graddata,Ndim):
+def filter_cort(magdata,graddata,Ndim):
     
     Qg,r = np.linalg.qr(graddata.T)
     Qm,r = np.linalg.qr(magdata.T)
