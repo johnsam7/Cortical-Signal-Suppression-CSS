@@ -15,5 +15,4 @@ def getFFT(y,Fs):
     Y = np.sqrt(Ft/(len(y)*Fs));
     f = Fs/2*np.linspace(0,1,len(y)/2+1);
 
-    outp = [f,Y]
-    return outp
+    return [f,Y]

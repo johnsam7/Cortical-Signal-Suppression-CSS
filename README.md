@@ -1,6 +1,6 @@
-# SECS
-Selective Suppression of Cortical Signal in M/EEG data
+# CSS
+Method for suppressing cortical signals while preserving subcortical signals in MEG and EEG.
 
-Run run_me.py for benchmarking that everything works. run_me.py calls SECS.py, which contains the SECS algorithm. It uses only data from the MNE_python 'sample' folder and labels provided locally in the repository. Running run_me.py should give the following output:
+Based on the paper Samuelsson J, Khan S, Sundaram P, Peled N, Hamalainen M (2018) Cortical Signal Suppression (CSS) for detection of subcortical activity using MEG and EEG. Please reference this paper when using CSS. 
 
-![hej hej](https://raw.githubusercontent.com/johnsam7/SECS/master/output.png)
+CSS.py contains the CSS algorithm. runme.py generates Figures 1,3,4,5 in the paper mentioned above. It uses only data from the MNE-python 'sample' folder and labels provided locally in the repository.
