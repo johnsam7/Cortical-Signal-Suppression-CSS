@@ -11,7 +11,7 @@ import matplotlib.pylab as plt
     
 def getFFT(y,Fs):
     Ft = np.fft.fft(y)
-    Ft = np.abs(Ft[0:len(Ft)/2+1])**2;
+    Ft = np.abs(Ft[0:int(len(Ft)/2+1)])**2;
     Y = np.sqrt(Ft/(len(y)*Fs));
     f = Fs/2*np.linspace(0,1,len(y)/2+1);
 

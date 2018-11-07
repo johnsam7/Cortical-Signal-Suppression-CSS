@@ -43,8 +43,6 @@ figsize = (1000/my_dpi,1000/my_dpi)
 data_path = sample.data_path()
 subjects_dir = op.join(data_path, 'subjects')
 raw = mne.io.read_raw_fif(data_path + '/MEG/sample/sample_audvis_raw.fif')
-proj = mne.read_proj(data_path + '/MEG/sample/sample_audvis_ecg_proj.fif')
-raw.info['projs'] += proj
 raw.info['bads'] = ['MEG 2443', 'EEG 053']
 
 fwd_fname = data_path + '/MEG/sample/sample_audvis-meg-eeg-oct-6-fwd.fif'
